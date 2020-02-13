@@ -6,7 +6,6 @@
 
 html {
   box-sizing: border-box;
-
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -18,19 +17,50 @@ html {
   box-sizing: inherit;
 }
 
-.grid {
-  background-color: #e2e2e2;
+li {
+  list-style-type: none;
+  display: inline-block;
 }
 
 h1 {
-
+  text-align: center;
 }
 
-li {
-  list-style-type: none;
+nav {
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: #0074d9;
+}
+
+header {
+  background-color: #e2e2e2;
+}
+
+body {
+  margin: 0;
+}
+
+.current, .current:visited {
+  color: #fff;
+  background-color: #0074d9;
+}
+
+a:hover, a:focus {
+  color: #fff;
+  background-color: #0074d9;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1 {
+    text-align: left;
+  }
+
+  nav {
+    text-align: right;
+  }
+
 }
